@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Admin Dashboard</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        .header {
+            background: linear-gradient(to right, #007bff, #00bfff);
+            color:<img src="images/place1.jpg" style="width: 100%;height:470px;">;
+            text-align: center;
+            padding: 20px 0;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .title {
+            font-size: 2em;
+            margin: 0;
+        }
+
+        .place {
+            text-align: center;
+            font-size: 1.5em;
+            margin-top: 20px;
+            color: #007bff;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .tit {
+            text-align: center;
+            margin-top: 10px;
+            font-size: 1.2em;
+            color: #007bff;
+        }
+
+        .clearfix {
+            margin-top: 40px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .img-container {
+            margin: 20px;
+            text-align: center;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+            border-radius: 10px;
+        }
+
+        .img-container:hover {
+            transform: translateY(-5px);
+        }
+
+        .img-container button {
+            border: none;
+            background: #007bff;
+            cursor: pointer;
+            transition: transform 0.3s;
+            width: 200px;
+            height: 200px;
+            overflow: hidden;
+            position: relative;
+            border-radius: 10px;
+        }
+
+        .img-container button:hover {
+            transform: translateY(-10px);
+        }
+
+        .but {
+            font-size: 1.2em;
+            color: #fff;
+            font-weight: bold;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(0, 123, 255, 0.6);
+            padding: 10px 0;
+            transition: background-color 0.3s;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+
+        .but:hover {
+            background-color: rgba(0, 123, 255, 0.8);
+        }
+
+        .container h1 {
+            font-size: 2em;
+            margin: 0;
+        }
+
+        .log {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .logout button {
+            background-color: #dc3545;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            font-family: 'Arial', sans-serif;
+            border-radius: 5px;
+        }
+
+        .logout button:hover {
+            background-color: #c82333;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="title">Admin Dashboard</div>
+    </div>
+
+    <div class="place">Placement Management Cell</div>
+
+    <div class="tit">Welcome back Admin...</div>
+
+    <div class="clearfix">
+        <div class="img-container">
+            <form action="adminIndex.jsp">
+                <button class="but">
+                    <div class="container">Add Admin<br><h1>+</h1></div>
+                </button>
+            </form>
+        </div>
+
+        <div class="img-container">
+            <form action="studentIndex.jsp">
+                <button class="but">
+                    <div class="container">Add Student<br><h1>+</h1></div>
+                </button>
+            </form>
+        </div>
+
+        <div class="img-container">
+            <form action="placementIndex.jsp">
+                <button class="but">
+                    <div class="container">Add Placement<br><h1>+</h1></div>
+                </button>
+            </form>
+        </div>
+
+        <div class="img-container">
+            <form action="collegeIndex.jsp">
+                <button class="but">
+                    <div class="container">Add Colleges<br><h1>+</h1></div>
+                </button>
+            </form>
+        </div>
+
+        <div class="img-container">
+            <form action="certificateIndex.jsp">
+                <button class="but">
+                    <div class="container">Add Certificates<br><h1>+</h1></div>
+                </button>
+            </form>
+        </div>
+
+        <div class="img-container">
+            <form action="userIndex.jsp">
+                <button class="but">
+                    <div class="container">Add Users<br><h1>+</h1></div>
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <div class="log">
+        <div class="logout">
+            <button onclick="logout()">Logout</button>
+        </div>
+    </div>
+
+    <script>
+    function logout() {
+        window.location.href = "AdminLogin.html";
+    }
+</script>
+
+</body>
+</html>
